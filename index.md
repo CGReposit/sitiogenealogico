@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Second Lineage Archive
+title: Commerford Lineage
 ---
 
 <style>
@@ -22,112 +22,75 @@ title: Second Lineage Archive
     color: #F26B5A;
   }
 
-  .quote-box {
-    background: #F3B562;
-    padding: 18px;
-    border-left: 6px solid #9F2A41;
-    border-radius: 6px;
-    margin-bottom: 25px;
-    color: #562C41;
-  }
-
-  .index-grid {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .index-item img {
-    border-radius: 6px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .index-item span {
-    display: block;
-    margin-top: 8px;
-    color: #562C41;
-    font-size: 14px;
-  }
-
-  .resource-card {
-    overflow: auto;
-    background: #F3B562;
-    padding: 15px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    color: #562C41;
-  }
-
-  .resource-card img {
-    border-radius: 6px;
+  /* For the labels under icons */
+  .index-label {
+    color: #562C41 !important;
   }
 </style>
 
 
-<div class="quote-box">
-  <strong>“Remember, remember always, that all of us, and you and I especially, are descended from immigrants and revolutionists.”</strong><br>
-  <em>— Franklin D. Roosevelt (1938)</em>
-</div>
+> Remember, remember always, that all of us, and you and I especially, are descended from immigrants and revolutionists"
+
+- _Franklin D. Roosevelt (1938)_ - 32nd President of the United States
+
+
 
 ![Statue of Liberty](/genealogysite/assets/images/statue-of-liberty.jpg)
 
 
-I have long disliked the rigid structure of traditional family trees.  
-Yet, as I began accumulating fragments of lineage, stories, and records, I felt compelled to build a new space for them — one with a different tone, a different palette, and a distinctly new focus.
+I always disliked family trees (see [Personal Note📝](personalnote.md) for rant on the matter). But recently I started collecting information about my personal genealogy. 
 
-This second genealogy page serves as an extension of my research and a creative experiment in documenting ancestry with clarity and warmth.
-
-
-## **Index**
-
-Below are the core sections of this archive:
+Since existing genealogy-tracking websites couldn't fully integrate all the information I was gathering from multiple sources, I decided to get creative and just build my own repository for this information 🗃️ Mainly, this website serves as an enormous personal project to learn the HTML coding basics behind creating a website (which i think went well!🤞🏼) - and to give my Dad and siblings this repository of information I believe they should also have access to. 
 
 
-<div class="index-grid">
+## Index
 
+This project yielded unexpected volumes of information: both on family history and American History. Highly interesting shit. 
+
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <!-- First row -->
   <div style="margin-bottom: 30px;">
-    <a class="index-item" href="family-directory.html" style="display: inline-block; margin: 0 20px;">
-      <img src="/genealogysite/assets/images/familysearch.png" alt="Registry" width="120" />
-      <span>Family Registry</span>
+    <a href="family-directory.html" style="display: inline-block; margin: 0 20px; text-decoration: none;">
+      <img src="/genealogysite/assets/images/familysearch.png" alt="Registry" width="120" style="border-radius: 6px; display: block;" />
+      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Family Registry</span>
     </a>
-
-    <a class="index-item" href="https://www.familyecho.com/?c=mtxabsk6nikjbuvu&f=195144334703685164" style="display: inline-block; margin: 0 20px;">
-      <img src="/genealogysite/assets/images/tree.png" alt="Family Tree" width="120" />
-      <span>Interactive Tree</span>
+    <a href="https://www.familyecho.com/?c=mtxabsk6nikjbuvu&f=195144334703685164" style="display: inline-block; margin: 0 20px; text-decoration: none;">
+      <img src="/genealogysite/assets/images/tree.png" alt="Family Tree" width="120" style="border-radius: 6px; display: block;" />
+      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Interactive Tree</span>
     </a>
   </div>
-
+  
+  <!-- Second row -->
   <div>
-    <a class="index-item" href="etymology.md" style="display: inline-block; margin: 0 20px;">
-      <img src="/genealogysite/assets/images/book.png" alt="Etymology" width="120" />
-      <span>Etymology of Surnames</span>
+<a href="etymology.md" style="display: inline-block; margin: 0 20px; text-decoration: none;">
+      <img src="/genealogysite/assets/images/book.png" alt="etymology" width="120" style="border-radius: 6px; display: block;" />
+      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Etymology of surnames</span>
     </a>
-
-    <a class="index-item" href="history.html" style="display: inline-block; margin: 0 20px;">
-      <img src="/genealogysite/assets/images/USA.png" alt="USA History" width="120" />
-      <span>Family & US History</span>
+ <a href="history.html" style="display: inline-block; margin: 0 20px; text-decoration: none;">
+      <img src="/genealogysite/assets/images/USA.png" alt="USA" width="120" style="border-radius: 6px; display: block;" />
+      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Family & US history</span>
     </a>
   </div>
-
 </div>
 
 
-### **Resources Used for Research**
 
+### Resources used for research:
 
-<div class="resource-card">
-  <img src="/genealogysite/assets/images/statueicon.png" alt="Ellis Island Icon" width="120" style="float: right; margin-left: 20px;"/>
+**FamilySearch** - is a free website sponsored by The Church of Jesus Christ of Latter-day Saints (the Mormons) that provides genealogical software to help people discover their family history. It is one of the world's largest genealogical resources, with millions of historical records and a vast, collaborative family tree that helps users establish a lineage. The service is free for the public to use (log in required). 
+
+<div style="overflow: auto; background-color: #F3B562; padding: 15px; border-radius: 6px; margin-bottom: 20px; color: #562C41;">
+  <img src="/genealogysite/assets/images/statueicon.png" alt="Ellis Island Icon" width="120" style="float: right; margin: 10px 0 10px 20px; border-radius: 6px;" />
   
-  <strong>Ellis Island Records</strong> —  
-  Maintains a vast, searchable database of more than 65 million passenger entries into the Port of New York.  
-  These manifests provide names, ages, nationalities, ports of departure, and numerous historical details of interest.
+  <strong>Ellis Island records</strong> — The Statue of Liberty-Ellis Island Foundation maintains a searchable database of approximately 65 million passenger records for the Port of New York from 1820 to 1957.  
+  The records include ship manifests with details like name, age, nationality, and port of departure, as well as other details of interest.  
+  This repository is open to the public (but requires making a free account).
 </div>
 
 
-<div class="resource-card">
-  <img src="/genealogysite/assets/images/clipboard.png" alt="US Census Icon" width="100" style="float: left; margin-right: 20px;"/>
-  
-  <strong>US Census Data</strong> —  
-  Conducted every ten years, and publicly released after 72.  
-  An indispensable genealogical resource, with the 1950 census being the most recent available for public research.
+
+<div style="overflow: auto; background-color: #F3B562; padding: 15px; border-radius: 6px; margin-bottom: 20px; color: #562C41;">
+  <img src="/genealogysite/assets/images/clipboard.png" alt="US Census Icon" width="100" style="float: left; margin: 10px 20px 10px 0; border-radius: 6px;" />
+  <strong>US Census Data</strong> — Since 1790, the US census has been significant for its role in apportioning political representation, federal funding allocation, and (most importantly in this case) as a rich genealogical and demographic record of the American people. Census data is collected every 10 years. Once 72 years have passed, the census records become publicly accessible. The 1950 census is the most recent one to be made public.
 </div>

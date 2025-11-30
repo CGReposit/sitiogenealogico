@@ -1,0 +1,14 @@
+:root {
+  --cream: #F4DFC4;
+  --gold: #F3B562;
+  --coral: #F26B5A;
+  --crimson: #9F2A41;
+  --plum: #562C41;
+
+  /* Suggested usage */
+  --background: var(--cream);
+  --text: var(--plum);
+  --header: var(--crimson);
+  --link: var(--coral);
+  --accent: var(--gold);
+}

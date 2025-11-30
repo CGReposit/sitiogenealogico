@@ -1,0 +1,9 @@
+title: Commerford Lineage
+description: a website compiling all genealogical information
+show_downloads: false
+
+
+google_analytics: # optional tracking ID
+remote_theme: pages-themes/merlot@v0.2.0
+plugins:
+  - jekyll-remote-theme

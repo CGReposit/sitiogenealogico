@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Commerford Lineage
+title: Recopilatorio Genealógico Guerra
 ---
 
 <style>
@@ -28,10 +28,6 @@ title: Commerford Lineage
   }
 </style>
 
-
-> Remember, remember always, that all of us, and you and I especially, are descended from immigrants and revolutionists"
-
-- _Franklin D. Roosevelt (1938)_ - 32nd President of the United States
 
 
 

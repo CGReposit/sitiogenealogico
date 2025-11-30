@@ -1,0 +1,49 @@
+/* ====== PALETA ====== */
+
+:root {
+  --cream: #F4DFC4;
+  --gold: #F3B562;
+  --coral: #F26B5A;
+  --crimson: #9F2A41;
+  --plum: #562C41;
+
+  /* asignaciones */
+  --background: var(--cream);
+  --text: var(--plum);
+  --header-text: var(--crimson);
+  --link: var(--coral);
+  --link-hover: var(--crimson);
+}
+
+/* ====== ESTILOS GLOBALES ====== */
+
+body {
+  background: var(--background) !important;
+  color: var(--text) !important;
+}
+
+/* Textos */
+h1, h2, h3, h4 {
+  color: var(--header-text) !important;
+}
+
+/* Links */
+a {
+  color: var(--link) !important;
+}
+a:hover {
+  color: var(--link-hover) !important;
+}
+
+/* Footer del theme por defecto */
+footer {
+  background: var(--gold) !important;
+  color: var(--plum) !important;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+/* Cuadros/Secciones */
+div {
+  color: var(--text);
+}

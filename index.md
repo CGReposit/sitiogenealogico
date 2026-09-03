@@ -27,12 +27,11 @@ description: Archivo genealógico de la familia Guerra Martín
       <p>Directorio de familiares y acceso a sus fichas individuales.</p>
     </a>
 
-    <div class="archive-card is-coming">
+    <a class="archive-card" href="https://www.familyecho.com/?c=bxcotnistqrnpium&amp;f=641068631401477405" target="_blank" rel="noopener noreferrer">
       <span class="archive-icon" aria-hidden="true">🌳</span>
       <h3>Árbol genealógico</h3>
-      <p>Una vista de las generaciones y sus relaciones familiares.</p>
-      <span class="coming-label">Próximamente</span>
-    </div>
+      <p>Explora las generaciones y sus relaciones familiares en Family Echo.</p>
+    </a>
 
     <div class="archive-card is-coming">
       <span class="archive-icon" aria-hidden="true">📍</span>

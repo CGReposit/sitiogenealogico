@@ -23,7 +23,7 @@ a { color:var(--wine); } a:hover { color:var(--terracotta); }
 h1,h2,h3 { color:var(--wine-dark); font-family:"Cormorant Garamond",Georgia,serif; line-height:1.12; }
 h1 { font-size:clamp(2.25rem,6vw,3.5rem); } h2 { font-size:clamp(1.8rem,5vw,2.4rem); } h3 { font-size:1.55rem; }
 .home-lede { max-width:680px; margin:0 auto 1.8rem; color:var(--olive); font-style:italic; text-align:center; }
-.hero-frame { position:relative; margin:0 auto 2.4rem; padding:.65rem; background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); }
+.hero-frame { position:relative; width:min(100%, 680px); margin:0 auto 2.4rem; padding:.65rem; background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); }
 .hero-frame::after { content:""; position:absolute; inset:.38rem; border:1px solid rgba(189,138,60,.45); pointer-events:none; }
 .hero-image { display:block; width:100%; height:auto; }
 .hero-caption { margin:.75rem .3rem .1rem; color:#766961; font-size:.78rem; letter-spacing:.08em; text-align:center; text-transform:uppercase; }

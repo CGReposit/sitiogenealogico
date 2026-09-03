@@ -42,46 +42,203 @@ a.archive-card:hover { transform:translateY(-3px); border-color:rgba(123,47,59,.
 .site-footer { padding:1.5rem 1rem 2rem; color:#786a62; border-top:1px solid var(--line); font-size:.75rem; letter-spacing:.05em; text-align:center; }
 .footer-dot { padding:0 .55rem; color:var(--ochre); }
 
-/* Polished family registry */
-.registry-page { padding:clamp(1.25rem,4vw,3rem); background:rgba(255,250,240,.78); border:1px solid var(--line); border-radius:10px; box-shadow:var(--shadow); }
-.registry-back { display:inline-block; margin-bottom:1.7rem; color:var(--wine); font-size:.84rem; font-weight:600; text-decoration:none; }
-.registry-header { margin-bottom:2rem; padding-bottom:1.35rem; border-bottom:3px solid rgba(189,138,60,.55); text-align:center; }
-.registry-ornament { margin-bottom:.45rem; color:var(--olive); font-size:.7rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; }
-.registry-header h1 { margin:0; font-size:clamp(2.5rem,7vw,4rem); }
-.registry-header p { margin:.35rem 0 0; color:var(--terracotta); font-style:italic; }
-.registry-stat { margin:0 0 1.2rem; padding:1rem 1.2rem; background:rgba(189,138,60,.15); border-left:5px solid var(--ochre); border-radius:5px; text-align:center; }
-.registry-stat strong { color:var(--wine-dark); font-size:1.35rem; }
-.registry-note { margin-bottom:3rem; padding:1.3rem 1.5rem; background:rgba(255,255,255,.5); border-left:5px solid rgba(119,128,100,.75); border-radius:5px; color:#5f534c; font-size:.9rem; }
-.registry-note p { margin:0 0 .65rem; }
-.registry-tree-link { display:inline-block; margin-top:.35rem; color:var(--wine); font-size:.78rem; font-weight:700; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; }
-.generation-section { margin-bottom:3.25rem; }
-.generation-title { margin:0 0 .25rem; padding-left:.8rem; border-left:5px solid var(--terracotta); font-size:clamp(1.65rem,4vw,2.1rem); }
-.generation-note { margin:0 0 1.1rem; color:#807169; font-size:.82rem; font-style:italic; }
-.registry-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
-.registry-card { position:relative; padding:1.25rem 1.3rem; overflow:hidden; background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(245,238,223,.92)); border:1px solid rgba(123,47,59,.18); border-left:5px solid rgba(119,128,100,.8); border-radius:7px; box-shadow:0 3px 12px rgba(68,55,49,.09); transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease; }
-.registry-card::before { content:""; position:absolute; top:0; right:0; left:0; height:3px; background:linear-gradient(90deg,var(--wine),var(--ochre),var(--wine)); opacity:0; transition:opacity .18s ease; }
-.registry-card:hover { transform:translateY(-2px); border-left-color:var(--ochre); box-shadow:0 8px 20px rgba(68,55,49,.13); }
-.registry-card:hover::before { opacity:1; }
-.registry-card--reference { border-left-color:var(--wine); }
-.card-flag { position:absolute; top:1rem; right:1rem; font-size:1.2rem; }
-.registry-card h3 { margin:0 2rem .2rem 0; color:var(--ink); font-size:1.3rem; }
-.card-dates { min-height:1.4em; color:#807169; font-size:.76rem; font-variant-numeric:oldstyle-nums; }
-.registry-card hr { margin:.7rem 0; border:0; border-top:1px solid var(--line); }
-.card-detail { display:flex; gap:.55rem; margin:.3rem 0; color:#5f534c; font-size:.78rem; line-height:1.45; }
-.card-detail strong { min-width:3.6rem; color:var(--ochre); font-size:.68rem; letter-spacing:.06em; text-transform:uppercase; }
-.card-detail span { flex:1; }
-.generation-section--collateral .generation-title { border-left-color:var(--olive); }
-.registry-source { margin-top:1rem; padding:1.15rem 1.3rem; background:rgba(119,128,100,.09); border-top:1px solid rgba(119,128,100,.25); border-bottom:1px solid rgba(119,128,100,.25); color:#655951; font-size:.82rem; }
-.registry-source strong { color:var(--wine-dark); font-family:"Cormorant Garamond",Georgia,serif; font-size:1.2rem; }
-.registry-source p { margin:.25rem 0 0; }
+/* Family directory — adapted from the American profile template */
+.directory-example {
+  --dir-blue-dark:#4b5e82;
+  --dir-blue-light:#7d95b3;
+  --dir-beige:#ede1bb;
+  --dir-peach:#e4b27c;
+  --dir-terracotta:#c4876a;
+  --dir-text:#2c2c2c;
+  max-width:900px;
+  margin:0 auto;
+  padding:clamp(1.25rem,4vw,2rem);
+  background:#fff;
+  border-radius:15px;
+  box-shadow:0 4px 20px rgba(0,0,0,.1);
+  color:var(--dir-text);
+  font-family:Georgia,"Times New Roman",serif;
+}
 
-@media (max-width:620px) {
-  body { font-size:16px; }
-  .site-header { padding-top:1.9rem; }
-  .page-shell { width:min(100% - 1rem,920px); padding-top:1rem; }
-  .archive-grid,.registry-grid { grid-template-columns:1fr; }
-  .archive-card { min-height:160px; }
-  .footer-dot { display:block; height:.3rem; color:transparent; }
-  .registry-page { padding:1rem; border-radius:7px; }
-  .registry-note { padding:1rem; }
+.directory-nav {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.45rem 1.35rem;
+  margin-bottom:1.5rem;
+}
+
+.directory-nav a {
+  color:var(--dir-blue-dark);
+  font-size:.95rem;
+  text-decoration:none;
+}
+
+.directory-nav a:hover { color:var(--dir-terracotta); }
+
+.directory-title {
+  margin-bottom:1.8rem;
+  padding-bottom:1.25rem;
+  border-bottom:3px solid var(--dir-peach);
+  text-align:center;
+}
+
+.directory-title h1 {
+  margin:0;
+  color:var(--dir-blue-dark);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.1rem,6vw,2.8rem);
+  text-shadow:1px 1px 2px rgba(0,0,0,.08);
+}
+
+.directory-title p {
+  margin:.25rem 0 0;
+  color:var(--dir-terracotta);
+  font-size:1.05rem;
+  font-style:italic;
+}
+
+.directory-count {
+  margin-bottom:1.5rem;
+  padding:1rem;
+  background:rgba(237,225,187,.72);
+  border-left:6px solid var(--dir-blue-light);
+  border-radius:10px;
+  text-align:center;
+}
+
+.directory-count strong {
+  color:var(--dir-blue-dark);
+  font-size:1.35rem;
+}
+
+.directory-explanation {
+  margin-bottom:1.7rem;
+  padding:1.1rem 1.25rem;
+  background:#faf9f7;
+  border-left:4px solid var(--dir-blue-light);
+  border-radius:6px;
+  font-size:.9rem;
+}
+
+.directory-explanation p { margin:0 0 .6rem; }
+.directory-explanation p:last-child { margin-bottom:0; }
+
+.directory-section {
+  margin-bottom:1.5rem;
+  padding:1.25rem;
+  background:var(--dir-beige);
+  border-left:6px solid var(--dir-blue-light);
+  border-radius:10px;
+}
+
+.directory-section h2 {
+  margin:0 0 .25rem;
+  padding-bottom:.55rem;
+  color:var(--dir-blue-dark);
+  border-bottom:2px solid var(--dir-peach);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.55rem;
+}
+
+.directory-section-note {
+  margin:.45rem 0 1rem;
+  color:#766b5f;
+  font-size:.82rem;
+  font-style:italic;
+}
+
+.directory-people {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.8rem;
+}
+
+.directory-person {
+  position:relative;
+  padding:1rem 1.05rem;
+  background:rgba(255,255,255,.82);
+  border:1px solid rgba(75,94,130,.15);
+  border-radius:7px;
+}
+
+.directory-person h3 {
+  margin:0 2rem .25rem 0;
+  color:var(--dir-blue-dark);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.08rem;
+  line-height:1.3;
+}
+
+.directory-person .person-flag {
+  position:absolute;
+  top:.85rem;
+  right:.9rem;
+}
+
+.directory-person .person-dates {
+  margin:0 0 .55rem;
+  color:var(--dir-terracotta);
+  font-size:.78rem;
+  font-style:italic;
+}
+
+.directory-info-row {
+  display:grid;
+  grid-template-columns:4.4rem 1fr;
+  gap:.45rem;
+  margin:.25rem 0;
+  font-size:.76rem;
+  line-height:1.45;
+}
+
+.directory-info-label {
+  color:var(--dir-terracotta);
+  font-weight:bold;
+}
+
+.directory-info-value { color:var(--dir-blue-dark); }
+
+.directory-pending {
+  color:#887f77;
+  font-style:italic;
+}
+
+.directory-source {
+  margin-top:1.75rem;
+  padding:1rem 1.15rem;
+  background:#faf9f7;
+  border-left:4px solid var(--dir-blue-light);
+  border-radius:6px;
+  font-size:.82rem;
+}
+
+.directory-action {
+  margin-top:1.8rem;
+  text-align:center;
+}
+
+.directory-button {
+  display:inline-block;
+  padding:.7rem 1.25rem;
+  background:var(--dir-blue-dark);
+  border-radius:8px;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+}
+
+.directory-button:hover {
+  transform:translateY(-2px);
+  background:var(--dir-terracotta);
+  box-shadow:0 4px 10px rgba(0,0,0,.18);
+  color:#fff;
+}
+
+@media (max-width:650px) {
+  .directory-example { padding:1rem; border-radius:10px; }
+  .directory-people { grid-template-columns:1fr; }
+  .directory-section { padding:1rem; }
+  .directory-info-row { grid-template-columns:4rem 1fr; }
 }

@@ -1,0 +1,68 @@
+---
+layout: default
+title: Registro familiar
+permalink: /family-directory.html
+---
+
+<style>
+  :root {
+    --ink: #4a2f2a;
+    --wine: #8e2f3f;
+    --cream: #f8f0df;
+    --paper: #fffaf0;
+    --gold: #c89543;
+  }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+  }
+
+  h1, h2, h3, a {
+    color: var(--wine);
+  }
+
+  .directory-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .directory-panel {
+    margin: 2rem 0;
+    padding: 1.6rem;
+    background: var(--paper);
+    border: 1px solid rgba(142, 47, 63, .2);
+    border-top: 5px solid var(--gold);
+    border-radius: 8px;
+    box-shadow: 0 8px 22px rgba(74, 47, 42, .1);
+  }
+
+  .directory-panel h2 {
+    margin-top: 0;
+  }
+
+  .empty-note {
+    padding: 1rem 1.1rem;
+    background: rgba(200, 149, 67, .13);
+    border-left: 4px solid var(--gold);
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-weight: 700;
+  }
+</style>
+
+<div class="directory-intro">
+  <p>Este directorio será el punto de acceso a las fichas individuales de la familia <strong>Guerra Martín</strong>. Cada ficha podrá reunir datos biográficos, relaciones familiares, lugares de residencia, fotografías, documentos y fuentes.</p>
+</div>
+
+<div class="directory-panel">
+  <h2>Personas registradas</h2>
+  <div class="empty-note">
+    El registro está preparado para recibir las primeras fichas familiares. Los nombres se organizarán alfabéticamente y enlazarán a una página individual cuando exista información suficiente.
+  </div>
+</div>
+
+<a class="back-link" href="{{ '/' | relative_url }}">← Volver a la página principal</a>

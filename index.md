@@ -8,7 +8,7 @@ description: Archivo genealógico de la familia Guerra Martín
 
 <figure class="hero-frame">
   <img class="hero-image" src="{{ '/images/castilla.jpg' | relative_url }}" alt="Paisaje castellano pintado al óleo">
-  <figcaption class="hero-caption">Tierras Castellanas</figcaption>
+  <figcaption class="hero-caption">Tierras de Castilla</figcaption>
 </figure>
 
 <section class="intro-card" aria-label="Presentación">

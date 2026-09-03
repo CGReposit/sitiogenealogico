@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-identity" href="{{ '/' | relative_url }}" aria-label="Página principal">
+      <span class="site-kicker">Archivo genealógico familiar</span>
+      <span class="site-name">Familia Guerra Martín</span>
+      <span class="site-ornament" aria-hidden="true">✦</span>
+    </a>
+  </header>
+
+  <main class="page-shell">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span>Familia Guerra Martín</span>
+    <span class="footer-dot" aria-hidden="true">•</span>
+    <span>Memoria, documentos e historia familiar</span>
+  </footer>
+</body>
+</html>

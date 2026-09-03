@@ -1,92 +1,104 @@
 ---
 layout: default
-title: Recopilatorio Genealógico Guerra
+title: Archivo Genealógico Guerra Martín
 ---
 
 <style>
+  :root {
+    --ink: #4a2f2a;
+    --wine: #8e2f3f;
+    --terracotta: #b75a3c;
+    --cream: #f8f0df;
+    --paper: #fffaf0;
+    --gold: #c89543;
+  }
+
   body {
-    background-color: #F4DFC4;
-    color: #562C41;
+    background: var(--cream);
+    color: var(--ink);
   }
 
   h1, h2, h3 {
-    color: #9F2A41;
+    color: var(--wine);
   }
 
   a {
-    color: #9F2A41;
+    color: var(--wine);
+  }
+
+  .hero-image {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    object-position: center;
+    border: 7px solid var(--paper);
+    box-shadow: 0 10px 28px rgba(74, 47, 42, .18);
+    margin: 1rem 0 1.6rem;
+  }
+
+  .intro {
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .registry-card {
+    max-width: 560px;
+    margin: 2rem auto;
+    padding: 1.75rem;
+    text-align: center;
+    background: var(--paper);
+    border: 1px solid rgba(142, 47, 63, .2);
+    border-top: 5px solid var(--gold);
+    border-radius: 8px;
+    box-shadow: 0 8px 22px rgba(74, 47, 42, .12);
+  }
+
+  .registry-card h3 {
+    margin-top: 0;
+  }
+
+  .registry-button {
+    display: inline-block;
+    margin-top: .65rem;
+    padding: .8rem 1.25rem;
+    color: #fff !important;
+    background: var(--wine);
+    border-radius: 5px;
+    font-weight: 700;
     text-decoration: none;
   }
 
-  a:hover {
-    color: #F26B5A;
+  .registry-button:hover {
+    background: var(--terracotta);
+    text-decoration: none;
   }
 
-  /* For the labels under icons */
-  .index-label {
-    color: #562C41 !important;
+  .purpose {
+    margin-top: 2.2rem;
+    padding: 1.25rem 1.4rem;
+    background: rgba(200, 149, 67, .14);
+    border-left: 4px solid var(--gold);
   }
 </style>
 
+<p style="text-align:center; font-style:italic;">Cada nombre conserva una historia; cada documento nos ayuda a reconstruirla.</p>
 
+<img class="hero-image" src="{{ '/images/castilla.jpg' | relative_url }}" alt="Paisaje de Castilla pintado al óleo">
 
+<div class="intro">
+  <p>Este archivo digital reúne la genealogía de la familia <strong>Guerra Martín</strong>. Su propósito es conservar y organizar nombres, fechas, lugares, fotografías, documentos y recuerdos familiares para que puedan consultarse y ampliarse con el paso del tiempo.</p>
 
-![Statue of Liberty](/genealogysite/assets/images/statue-of-liberty.jpg)
-
-
-I always disliked family trees (see [Personal Note📝](personalnote.md) for rant on the matter). But recently I started collecting information about my personal genealogy. 
-
-Since existing genealogy-tracking websites couldn't fully integrate all the information I was gathering from multiple sources, I decided to get creative and just build my own repository for this information 🗃️ Mainly, this website serves as an enormous personal project to learn the HTML coding basics behind creating a website (which i think went well!🤞🏼) - and to give my Dad and siblings this repository of information I believe they should also have access to. 
-
-
-## Index
-
-This project yielded unexpected volumes of information: both on family history and American History. Highly interesting shit. 
-
-
-<div style="text-align: center; margin-bottom: 20px;">
-  <!-- First row -->
-  <div style="margin-bottom: 30px;">
-    <a href="family-directory.html" style="display: inline-block; margin: 0 20px; text-decoration: none;">
-      <img src="/genealogysite/assets/images/familysearch.png" alt="Registry" width="120" style="border-radius: 6px; display: block;" />
-      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Family Registry</span>
-    </a>
-    <a href="https://www.familyecho.com/?c=mtxabsk6nikjbuvu&f=195144334703685164" style="display: inline-block; margin: 0 20px; text-decoration: none;">
-      <img src="/genealogysite/assets/images/tree.png" alt="Family Tree" width="120" style="border-radius: 6px; display: block;" />
-      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Interactive Tree</span>
-    </a>
-  </div>
-  
-  <!-- Second row -->
-  <div>
-<a href="etymology.md" style="display: inline-block; margin: 0 20px; text-decoration: none;">
-      <img src="/genealogysite/assets/images/book.png" alt="etymology" width="120" style="border-radius: 6px; display: block;" />
-      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Etymology of surnames</span>
-    </a>
- <a href="history.html" style="display: inline-block; margin: 0 20px; text-decoration: none;">
-      <img src="/genealogysite/assets/images/USA.png" alt="USA" width="120" style="border-radius: 6px; display: block;" />
-      <span class="index-label" style="display: block; margin-top: 8px; font-size: 14px;">Family & US history</span>
-    </a>
-  </div>
+  <p>El proyecto sigue el modelo del archivo genealógico de la rama paterna, pero está dedicado a la familia materna y a sus raíces en España. La información se irá incorporando de forma gradual a medida que aparezcan nuevas fuentes y testimonios.</p>
 </div>
 
+## Índice
 
-
-### Resources used for research:
-
-**FamilySearch** - is a free website sponsored by The Church of Jesus Christ of Latter-day Saints (the Mormons) that provides genealogical software to help people discover their family history. It is one of the world's largest genealogical resources, with millions of historical records and a vast, collaborative family tree that helps users establish a lineage. The service is free for the public to use (log in required). 
-
-<div style="overflow: auto; background-color: #F3B562; padding: 15px; border-radius: 6px; margin-bottom: 20px; color: #562C41;">
-  <img src="/genealogysite/assets/images/statueicon.png" alt="Ellis Island Icon" width="120" style="float: right; margin: 10px 0 10px 20px; border-radius: 6px;" />
-  
-  <strong>Ellis Island records</strong> — The Statue of Liberty-Ellis Island Foundation maintains a searchable database of approximately 65 million passenger records for the Port of New York from 1820 to 1957.  
-  The records include ship manifests with details like name, age, nationality, and port of departure, as well as other details of interest.  
-  This repository is open to the public (but requires making a free account).
+<div class="registry-card">
+  <h3>Registro familiar</h3>
+  <p>Consulta el directorio de familiares y accede a las fichas individuales que se incorporen al archivo.</p>
+  <a class="registry-button" href="{{ '/family-directory.html' | relative_url }}">Abrir el registro familiar</a>
 </div>
 
-
-
-<div style="overflow: auto; background-color: #F3B562; padding: 15px; border-radius: 6px; margin-bottom: 20px; color: #562C41;">
-  <img src="/genealogysite/assets/images/clipboard.png" alt="US Census Icon" width="100" style="float: left; margin: 10px 20px 10px 0; border-radius: 6px;" />
-  <strong>US Census Data</strong> — Since 1790, the US census has been significant for its role in apportioning political representation, federal funding allocation, and (most importantly in this case) as a rich genealogical and demographic record of the American people. Census data is collected every 10 years. Once 72 years have passed, the census records become publicly accessible. The 1950 census is the most recent one to be made public.
+<div class="purpose">
+  <strong>Un archivo en construcción.</strong> Esta página crecerá con nuevas personas, documentos y relatos. Cuando existan versiones contradictorias de una fecha o un parentesco, se conservarán las fuentes para distinguir lo comprobado de lo pendiente de investigación.
 </div>

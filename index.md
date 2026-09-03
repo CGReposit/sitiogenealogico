@@ -8,11 +8,11 @@ description: Archivo genealógico de la familia Guerra Martín
 
 <figure class="hero-frame">
   <img class="hero-image" src="{{ '/images/castilla.jpg' | relative_url }}" alt="Paisaje castellano pintado al óleo">
-  <figcaption class="hero-caption">Raíces familiares en tierras de Castilla</figcaption>
+  <figcaption class="hero-caption">Tierras Castellanas</figcaption>
 </figure>
 
 <section class="intro-card" aria-label="Presentación">
-  <p>Este archivo digital reúne la genealogía de la familia <strong>Guerra Martín</strong>. Nace para conservar nombres, fechas, lugares, fotografías, documentos y recuerdos familiares, y para ponerlos al alcance de quienes comparten esta historia.</p>
+  <p>Este archivo digital reúne la genealogía de la familia <strong>Guerra-Martín</strong>. Nace para conservar nombres, fechas, lugares, fotografías, documentos y recuerdos familiares, y para ponerlos al alcance de quienes comparten esta historia.</p>
   <p>La colección irá creciendo poco a poco, a medida que aparezcan nuevas fuentes y que los relatos familiares permitan dar vida a los nombres del pasado.</p>
 </section>
 

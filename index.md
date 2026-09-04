@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Familia Guerra Martín
-description: Archivo genealógico de la familia Guerra Martín
+title: Familia Guerra-Martín
+description: Archivo genealógico de la familia Guerra-Martín
 ---
 
 <p class="home-lede">Cada nombre conserva una historia; cada documento nos ayuda a reconstruirla.</p>
